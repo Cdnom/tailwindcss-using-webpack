@@ -1,0 +1,20 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@layer components {
+  .menu-floating {
+    /* @apply flex bottom-0 fixed gap-0 md:absolute md:top-[179px] md:right-0 md:flex-col md:items-center md:gap-[2px]; */
+    @apply fixed bottom-0 inset-x-0  md:absolute md:top-[179px] md:right-0 md:left-[unset];
+  }
+
+  .menu-floating__wrap {
+    @apply grid grid-cols-5 md:grid-cols-1 md:gap-[2px];
+  }
+  .menu-floating__action {
+    @apply w-full h-[56px] gap-2 bg-white flex flex-col justify-center items-center text-blue-900 font-maven hover:bg-gray-200  md:w-74 md:h-74 md:gap-[10px];
+  }
+
+  .menu-floating__action-text {
+    @apply text-[10px] font-medium md:text-[11px];
+  }
+}
